@@ -1,12 +1,23 @@
 using System.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace FileApp
 {
     public partial class Form1 : Form
     {
+        private const string FileNameUserName    = "user-name.txt";
+
         public Form1()
         {
             InitializeComponent();
+            var userNamePath = GetFullPath(FileNameUserName);
+            if (File.Exists(userNamePath))
+            {
+                //Nazwa jest ustawiona
+                var userName = File.ReadAllText(userNamePath);
+                
+                SetUserName(userName);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -21,7 +32,8 @@ namespace FileApp
 
             var path = GetFullPath(fileName);
 
-            if (File.Exists(path)) {
+            if (File.Exists(path))
+            {
                 MessageBox.Show("Plik o podanej nazwie ju¿ istnieje! Wpisz proszê inn¹ nazwê pliku.");
                 return;
             }
@@ -107,6 +119,27 @@ namespace FileApp
 
         }
 
+        private void btnUserNameSave_Click(object sender, EventArgs e)
+        {
+            var userName = tbUserName.Text;
+            if (string.IsNullOrEmpty(userName))
+            {
+                MessageBox.Show("Proszê podaj nazwê u¿ytkownika!");
+                return;
+            }
 
+            var path = GetFullPath(FileNameUserName);
+            File.WriteAllText(path, userName);
+
+            SetUserName(userName);
+        }
+
+        private void SetUserName(string userName)
+        {
+            lbUserName.Text = $"Witaj {userName} !";
+            lbUserInfo.Visible = false;
+            tbUserName.Visible = false;
+            btnUserNameSave.Visible = false;
+        }
     }
 }
