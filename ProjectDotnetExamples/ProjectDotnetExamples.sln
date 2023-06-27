@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileApp", "FileApp\FileApp.csproj", "{EAF48B80-D2E0-425B-BD8E-72E1674BC3FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopApp", "ShopApp\ShopApp.csproj", "{5975F045-F6B6-470E-BDC5-109E7C623406}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopApp", "ShopApp\ShopApp.csproj", "{5975F045-F6B6-470E-BDC5-109E7C623406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipApp", "ZipApp\ZipApp.csproj", "{EB6D18A5-8A19-4008-BE96-F0E86B7DBAF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5975F045-F6B6-470E-BDC5-109E7C623406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5975F045-F6B6-470E-BDC5-109E7C623406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5975F045-F6B6-470E-BDC5-109E7C623406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6D18A5-8A19-4008-BE96-F0E86B7DBAF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6D18A5-8A19-4008-BE96-F0E86B7DBAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6D18A5-8A19-4008-BE96-F0E86B7DBAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6D18A5-8A19-4008-BE96-F0E86B7DBAF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
