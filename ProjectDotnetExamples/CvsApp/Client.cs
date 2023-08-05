@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CvsApp
 {
-    internal class Client
+    public class Client
     {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public DateTime AddedData { get; set; }
+        public Boolean IsConfirmed { get; set; }    
     }
 }
