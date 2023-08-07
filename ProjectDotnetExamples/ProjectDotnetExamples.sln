@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopApp", "ShopApp\ShopApp.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZipApp", "ZipApp\ZipApp.csproj", "{EB6D18A5-8A19-4008-BE96-F0E86B7DBAF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CvsApp", "CvsApp\CvsApp.csproj", "{68E333D1-E0CE-4901-BC7F-EB7A014E7A36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV old", "CvsApp\CSV old.csproj", "{68E333D1-E0CE-4901-BC7F-EB7A014E7A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvApp", "CsvApp\CsvApp.csproj", "{1877E5C3-76E3-43E7-BA62-B559BC74059F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{68E333D1-E0CE-4901-BC7F-EB7A014E7A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68E333D1-E0CE-4901-BC7F-EB7A014E7A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68E333D1-E0CE-4901-BC7F-EB7A014E7A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1877E5C3-76E3-43E7-BA62-B559BC74059F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1877E5C3-76E3-43E7-BA62-B559BC74059F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1877E5C3-76E3-43E7-BA62-B559BC74059F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1877E5C3-76E3-43E7-BA62-B559BC74059F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

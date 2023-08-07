@@ -57,8 +57,8 @@ namespace CvsApp
 
         private void ClearData()
         {
-            tbEmail.Text = '';
-            tbName.Text = '';
+            tbEmail.Text = "";
+            tbName.Text = "";
             dtpAddedDate.Value = DateTime.Now;
             cbIsConfirmed.Checked = false;
 
